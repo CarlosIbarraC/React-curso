@@ -26,5 +26,5 @@ CounterApp.prototype={
     value:PropTypes.number.isRequired
 }
 export default CounterApp;
-
+//prueba
 
