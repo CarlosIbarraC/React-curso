@@ -1,15 +1,13 @@
 html, body{
-
-   color: rgb(104, 164, 216); 
-   background-color: rgb(78, 68, 218);
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   font-size: medium;
-   padding: 21px;
+    background-color: #21232a;
+    color:white;    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    padding: 70px ;
 }
 button{
-   font-size: 1.3rem;
-   padding: 10px ;
-   margin-right: 10px;
-   border-radius: 3px;
-
+    padding: 10px;
+    background-color: tomato;
+    font-size: 1.3rem;
+    margin-right: 10px;
 }

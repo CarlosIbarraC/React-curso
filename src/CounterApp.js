@@ -1,30 +1,39 @@
-import React,{useState} from 'react';
-import PropTypes from 'prop-types'; 
 
-const CounterApp = ({value=10})=>{
-     
-    const [counter, setCounter] = useState(value);
 
-    
+import React ,{useState} from 'react'
+import PropTypes from 'prop-types'
 
-    const handleAdd = (e)=>{
-        setCounter(counter +1);
-        //setCounter((c)=>c+1)
+const CounterApp = ({value}) => {
+
+    const [counter,setCounter] = useState(10);
+
+    //console.log(nombre,setnombre);
+
+    const handleAdd=(e)=>{
+        setCounter(counter+1)
     }
-    const handleDis = (e)=>{setCounter(counter -1)}
-    const handleDef = (e)=>{setCounter(value)}
-    return(<>
-    <h1>CounterApp</h1>
-    <p>{counter}</p>
-    <button onClick={handleAdd}>+1</button>
-    <button onClick={handleDef}>Reset</button>
-    <button onClick={handleDis}>-1</button>
-    </>
-    ) 
-}
-CounterApp.prototype={
-    value:PropTypes.number.isRequired
-}
-export default CounterApp;
-//prueba mmmm
+    const handleReset=(e)=>{
+        setCounter(value)
+    }
+    const handleSub=(e)=>{
+        setCounter(counter-1)
+    }
+    return (
+        <>
+         <h1>CounterApp</h1> 
+         <h2>{counter}</h2> 
 
+         <button onClick={handleAdd}>boton +1</button> 
+         <button onClick={handleReset}>reset</button>
+         <button onClick={handleSub}>boton -1</button>
+        </>
+    )
+}
+
+CounterApp.propTypes = {
+
+    value: PropTypes.number.isRequired
+
+}
+
+export default CounterApp
